@@ -1,0 +1,35 @@
+name: Docs
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Publish:
+    strategy:
+      matrix:
+        os: [macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          repository: "TootSDK/TootSDK"
+      - name: Install jazzy
+        run: |
+          gem install jazzy
+      - name: Jazzy version
+        run: |
+          jazzy -version
+          type -a jazzy
+      - name: Print dir
+        run: |
+          pwd
+          ls
+      - name: Regenerate docs
+        run: |
+          bash ./updatedocs.sh
+      # Commit all changed files back to the repository
+      - uses: stefanzweifel/git-auto-commit-action@v4
