@@ -304,6 +304,18 @@
                 <a href="../Structs/ScheduledPostParams.html">ScheduledPostParams</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/Search.html">Search</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Search/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SearchParams.html">SearchParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SearchParams/SearchType.html">– SearchType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Tag.html">Tag</a>
               </li>
               <li class="nav-group-task">
@@ -3443,6 +3455,95 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div>
                         <h4>Return Value</h4>
                         <p>the post deleted (for delete and redraft), if successful, throws an error if not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC6search6params_5limit6offsetAA6SearchVAA0H6ParamsV_AA9PagedInfoVSgSiSgAOtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/search(params:_:limit:offset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC6search6params_5limit6offsetAA6SearchVAA0H6ParamsV_AA9PagedInfoVSgSiSgAOtYaKF">search(params:<wbr>_:<wbr>limit:<wbr>offset:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Search for content in accounts, posts and hashtags.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/SearchParams.html">SearchParams</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Search.html">Search</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>params</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The search parameters.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PagedInfo object for max/min/since ids.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of results to return. Defaults to 40.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Skip the first n results.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Search results.</p>
                       </div>
                     </section>
                   </div>

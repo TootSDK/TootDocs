@@ -1387,6 +1387,69 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
+      "line": 8,
+      "symbol": "Search.init(accounts:posts:hashtags:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
+      "line": 23,
+      "symbol": "Search.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
+      "line": 24,
+      "symbol": "Search.CodingKeys.accounts",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
+      "line": 25,
+      "symbol": "Search.CodingKeys.posts",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
+      "line": 26,
+      "symbol": "Search.CodingKeys.hashtags",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/SearchParams.swift",
+      "line": 46,
+      "symbol": "SearchParams.SearchType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/SearchParams.swift",
+      "line": 47,
+      "symbol": "SearchParams.SearchType.accounts",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/SearchParams.swift",
+      "line": 48,
+      "symbol": "SearchParams.SearchType.hashtags",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/SearchParams.swift",
+      "line": 49,
+      "symbol": "SearchParams.SearchType.posts",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Tag.swift",
       "line": 8,
       "symbol": "Tag.init(name:url:history:)",
@@ -1692,6 +1755,13 @@
       "line": 26,
       "symbol": "TootClient.getHomeTimeline(_:limit:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 6,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
