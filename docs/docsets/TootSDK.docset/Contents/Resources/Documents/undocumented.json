@@ -1751,13 +1751,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+TimeLine.swift",
-      "line": 26,
-      "symbol": "TootClient.getHomeTimeline(_:limit:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
       "line": 6,
       "symbol": "TootClient",
@@ -1941,28 +1934,28 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream.swift",
-      "line": 28,
+      "line": 34,
       "symbol": "PostTootStreams.ResponseType",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream.swift",
-      "line": 33,
+      "line": 39,
       "symbol": "AccountTootStreams.verifyCredentials",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream.swift",
-      "line": 34,
+      "line": 40,
       "symbol": "AccountTootStreams.account(id:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream.swift",
-      "line": 38,
+      "line": 44,
       "symbol": "AccountTootStreams.ResponseType",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"

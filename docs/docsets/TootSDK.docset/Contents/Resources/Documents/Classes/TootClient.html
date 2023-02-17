@@ -2619,6 +2619,102 @@ Note that the call will be successful even if the domain was not previously bloc
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7TootSDK0A6ClientC7getPoll2idAA0E0VSS_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getPoll(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC7getPoll2idAA0E0VSS_tYaKF">getPoll(id:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Obtain a poll with the specified <code>id</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getPoll</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC8votePoll2id7choicesAA0E0VSS_10Foundation8IndexSetVtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/votePoll(id:choices:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC8votePoll2id7choicesAA0E0VSS_10Foundation8IndexSetVtYaKF">votePoll(id:<wbr>choices:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vote on a poll.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">votePoll</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">,</span> <span class="nv">choices</span><span class="p">:</span> <span class="kt">IndexSet</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the Poll.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>choices</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set of indices representing votes for each option (starting from 0).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Poll that was voted on.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7TootSDK0A6ClientC13followAccount2by6paramsAA12RelationshipVSS_AA06FollowE6ParamsVSgtYaKF"></a>
                     <a name="//apple_ref/swift/Method/followAccount(by:params:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7TootSDK0A6ClientC13followAccount2by6paramsAA12RelationshipVSS_AA06FollowE6ParamsVSgtYaKF">followAccount(by:<wbr>params:<wbr>)</a>
