@@ -510,7 +510,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Account</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Account</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kd">@unchecked</span> <span class="kt">Sendable</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Account</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Account</span><span class="p">:</span> <span class="kt">CustomDebugStringConvertible</span></code></pre>
 
@@ -540,7 +540,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Post</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Post</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kd">@unchecked</span> <span class="kt">Sendable</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Post</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
@@ -582,7 +582,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TootClient</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TootClient</span> <span class="p">:</span> <span class="kd">@unchecked</span> <span class="kt">Sendable</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">TootClient</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>

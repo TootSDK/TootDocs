@@ -394,14 +394,14 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/AccountLookup.swift",
-      "line": 10,
+      "line": 8,
       "symbol": "AccountLookup",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/AccountLookup.swift",
-      "line": 11,
+      "line": 9,
       "symbol": "AccountLookup.init(id:username:acct:displayName:locked:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -891,7 +891,7 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/EditPostParams.swift",
-      "line": 8,
+      "line": 9,
       "symbol": "EditPostParams.init(post:spoilerText:sensitive:mediaIds:poll:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1157,7 +1157,7 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/MediaAttachment.swift",
-      "line": 7,
+      "line": 8,
       "symbol": "MediaAttachment.init(id:type:url:remoteUrl:previewUrl:meta:description:blurhash:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1318,7 +1318,7 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Relationship.swift",
-      "line": 9,
+      "line": 10,
       "symbol": "Relationship.init(id:following:requested:endorsed:followedBy:muting:mutingNotifications:showingReposts:notifying:blocking:domainBlocking:blockedBy:note:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1388,35 +1388,35 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
-      "line": 8,
+      "line": 9,
       "symbol": "Search.init(accounts:posts:hashtags:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
-      "line": 23,
+      "line": 24,
       "symbol": "Search.CodingKeys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "Search.CodingKeys.accounts",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
-      "line": 25,
+      "line": 26,
       "symbol": "Search.CodingKeys.posts",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Search.swift",
-      "line": 26,
+      "line": 27,
       "symbol": "Search.CodingKeys.hashtags",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -1633,7 +1633,7 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UploadMediaAttachmentParams.swift",
-      "line": 7,
+      "line": 8,
       "symbol": "UploadMediaAttachmentParams.init(file:thumbnail:description:focus:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

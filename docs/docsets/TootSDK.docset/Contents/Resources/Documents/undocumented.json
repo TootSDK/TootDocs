@@ -1920,6 +1920,13 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 222,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
       "line": 285,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
