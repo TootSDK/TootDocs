@@ -16,7 +16,7 @@
     <a title="TootSDK  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">TootSDK Docs</a> (63% documented)</p>
+        <p><a href="index.html">TootSDK Docs</a> (64% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -102,6 +102,9 @@
                 <a href="Enums/PostTootStreams.html">PostTootStreams</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/TootGrantType.html">TootGrantType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/TootSDKError.html">TootSDKError</a>
               </li>
               <li class="nav-group-task">
@@ -153,9 +156,6 @@
                 <a href="Structs/AnnouncementReaction.html">AnnouncementReaction</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Attachment.html">Attachment</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Structs/AttachmentMeta.html">AttachmentMeta</a>
               </li>
               <li class="nav-group-task">
@@ -198,6 +198,9 @@
                 <a href="Structs/FeaturedTag.html">FeaturedTag</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/FederatedTimelineQuery.html">FederatedTimelineQuery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/Filter.html">Filter</a>
               </li>
               <li class="nav-group-task">
@@ -207,13 +210,16 @@
                 <a href="Structs/FollowAccountParams.html">FollowAccountParams</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/HashtagTimelineQuery.html">HashtagTimelineQuery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/IdentityProof.html">IdentityProof</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Instance.html">Instance</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Instance/URLs.html">– URLs</a>
+                <a href="Structs/Instance/InstanceURLs.html">– InstanceURLs</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Instance/Stats.html">– Stats</a>
@@ -226,6 +232,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/ListParams.html">ListParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LocalTimelineQuery.html">LocalTimelineQuery</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Marker.html">Marker</a>
@@ -285,6 +294,12 @@
                 <a href="Structs/PushSubscription.html">PushSubscription</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/RegisterAccountErrors.html">RegisterAccountErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RegisterAccountParams.html">RegisterAccountParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/Relationship.html">Relationship</a>
               </li>
               <li class="nav-group-task">
@@ -342,7 +357,16 @@
                 <a href="Structs/TootSource.html">TootSource</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/UpdateMediaAttachmentParams.html">UpdateMediaAttachmentParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/UploadMediaAttachmentParams.html">UploadMediaAttachmentParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/UploadedMediaAttachment.html">UploadedMediaAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/UploadedMediaAttachment/State.html">– State</a>
               </li>
             </ul>
           </li>
@@ -389,9 +413,11 @@ TootSDK is a shared Swift Package that any client app can be built on.</p>
 <h2 id='project-status' class='heading'>Project Status 📈</h2>
 
 <ul>
-<li>Mastodon - In progress</li>
-<li>Pleroma - In progress</li>
-<li>Pixelfed - To do</li>
+<li>Mastodon - Nearly there</li>
+<li>Pleroma - Nearly there</li>
+<li>Pixelfed - Nearly there</li>
+<li>Friendica - Nearly there</li>
+<li>Akkoma - Nearly there</li>
 <li>Writefreely - To do</li>
 </ul>
 
@@ -456,6 +482,27 @@ TootSDK is a shared Swift Package that any client app can be built on.</p>
 <p>We recommend keeping the accessToken somewhere secure, for example the Keychain.</p>
 <h3 id='accessing-a-user-39-s-home-feedfeed' class='heading'>Accessing a user&rsquo;s home feedfeed</h3>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">posts</span> <span class="o">=</span> <span class="k">try</span> <span class="n">await</span> <span class="n">client</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="nf">stream</span><span class="p">(</span><span class="o">.</span><span class="n">timeLineHome</span><span class="p">)</span>
+</code></pre>
+<h3 id='creating-an-account' class='heading'>Creating an account</h3>
+
+<ul>
+<li><p>Register the app with the following scopes <code>[&quot;read&quot;, &quot;write:accounts&quot;]</code>.</p></li>
+<li><p>Get instance information and determine the sign up requirements. Some instances may not be open for registration while others may require additional verification.</p></li>
+</ul>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">instance</span> <span class="o">=</span> <span class="k">try</span> <span class="n">await</span> <span class="n">client</span><span class="o">.</span><span class="nf">getInstanceInfo</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">instance</span><span class="o">.</span><span class="n">registrations</span> <span class="o">==</span> <span class="kc">false</span> <span class="p">{</span>
+  <span class="c1">// instance not open for registration</span>
+  <span class="k">return</span>
+<span class="p">}</span>
+<span class="c1">// ...</span>
+</code></pre>
+
+<ul>
+<li>Use the <code>registerAccount</code> method to create a user account:</li>
+</ul>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">params</span> <span class="o">=</span> <span class="kt">RegisterAccountParams</span><span class="p">(</span>
+      <span class="nv">username</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span> <span class="nv">email</span><span class="p">:</span> <span class="n">email</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="n">password</span><span class="p">,</span> <span class="nv">agreement</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">locale</span><span class="p">:</span> <span class="s">"en"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">token</span> <span class="o">=</span> <span class="k">try</span> <span class="n">await</span> <span class="n">client</span><span class="o">.</span><span class="nf">registerAccount</span><span class="p">(</span><span class="nv">params</span><span class="p">:</span> <span class="n">params</span><span class="p">)</span>
 </code></pre>
 <h2 id='further-documentation' class='heading'>Further Documentation 📖</h2>
 

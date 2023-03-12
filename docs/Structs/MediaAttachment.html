@@ -17,7 +17,7 @@
     <a title="MediaAttachment Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">TootSDK Docs</a> (63% documented)</p>
+        <p><a href="../index.html">TootSDK Docs</a> (64% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -103,6 +103,9 @@
                 <a href="../Enums/PostTootStreams.html">PostTootStreams</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/TootGrantType.html">TootGrantType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/TootSDKError.html">TootSDKError</a>
               </li>
               <li class="nav-group-task">
@@ -154,9 +157,6 @@
                 <a href="../Structs/AnnouncementReaction.html">AnnouncementReaction</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Attachment.html">Attachment</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/AttachmentMeta.html">AttachmentMeta</a>
               </li>
               <li class="nav-group-task">
@@ -199,6 +199,9 @@
                 <a href="../Structs/FeaturedTag.html">FeaturedTag</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/FederatedTimelineQuery.html">FederatedTimelineQuery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Filter.html">Filter</a>
               </li>
               <li class="nav-group-task">
@@ -208,13 +211,16 @@
                 <a href="../Structs/FollowAccountParams.html">FollowAccountParams</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/HashtagTimelineQuery.html">HashtagTimelineQuery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/IdentityProof.html">IdentityProof</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Instance.html">Instance</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Instance/URLs.html">– URLs</a>
+                <a href="../Structs/Instance/InstanceURLs.html">– InstanceURLs</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Instance/Stats.html">– Stats</a>
@@ -227,6 +233,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ListParams.html">ListParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalTimelineQuery.html">LocalTimelineQuery</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Marker.html">Marker</a>
@@ -286,6 +295,12 @@
                 <a href="../Structs/PushSubscription.html">PushSubscription</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/RegisterAccountErrors.html">RegisterAccountErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegisterAccountParams.html">RegisterAccountParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Relationship.html">Relationship</a>
               </li>
               <li class="nav-group-task">
@@ -343,7 +358,16 @@
                 <a href="../Structs/TootSource.html">TootSource</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/UpdateMediaAttachmentParams.html">UpdateMediaAttachmentParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/UploadMediaAttachmentParams.html">UploadMediaAttachmentParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadedMediaAttachment.html">UploadedMediaAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadedMediaAttachment/State.html">– State</a>
               </li>
             </ul>
           </li>
@@ -356,11 +380,11 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MediaAttachment</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MediaAttachment</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Identifiable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Represents a file or media attachment that can be added to a status.</p>
 
           </section>
           <section class="section task-group-section">
@@ -369,9 +393,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK15MediaAttachmentV2id4type3url9remoteUrl07previewI04meta11description8blurhashACSS_AA0D4TypeOSSSgA2nA0D4MetaVSgA2Ntcfc"></a>
+                    <a name="/s:7TootSDK15MediaAttachmentV2id4type3url9remoteUrl07previewI04meta11description8blurhashACSS_AA0D4TypeOS2SSgAnA0D4MetaVSgA2Ntcfc"></a>
                     <a name="//apple_ref/swift/Method/init(id:type:url:remoteUrl:previewUrl:meta:description:blurhash:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK15MediaAttachmentV2id4type3url9remoteUrl07previewI04meta11description8blurhashACSS_AA0D4TypeOSSSgA2nA0D4MetaVSgA2Ntcfc">init(id:<wbr>type:<wbr>url:<wbr>remoteUrl:<wbr>previewUrl:<wbr>meta:<wbr>description:<wbr>blurhash:<wbr>)</a>
+                    <a class="token" href="#/s:7TootSDK15MediaAttachmentV2id4type3url9remoteUrl07previewI04meta11description8blurhashACSS_AA0D4TypeOS2SSgAnA0D4MetaVSgA2Ntcfc">init(id:<wbr>type:<wbr>url:<wbr>remoteUrl:<wbr>previewUrl:<wbr>meta:<wbr>description:<wbr>blurhash:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -386,7 +410,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/AttachmentType.html">AttachmentType</a></span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remoteUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">previewUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">meta</span><span class="p">:</span> <span class="kt"><a href="../Structs/AttachmentMeta.html">AttachmentMeta</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">blurhash</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/AttachmentType.html">AttachmentType</a></span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">remoteUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">previewUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">meta</span><span class="p">:</span> <span class="kt"><a href="../Structs/AttachmentMeta.html">AttachmentMeta</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">blurhash</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -450,9 +474,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK15MediaAttachmentV3urlSSSgvp"></a>
+                    <a name="/s:7TootSDK15MediaAttachmentV3urlSSvp"></a>
                     <a name="//apple_ref/swift/Property/url" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK15MediaAttachmentV3urlSSSgvp">url</a>
+                    <a class="token" href="#/s:7TootSDK15MediaAttachmentV3urlSSvp">url</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -467,7 +491,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -603,6 +627,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">blurhash</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK15MediaAttachmentV11aspectRatioSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/aspectRatio" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK15MediaAttachmentV11aspectRatioSdSgvp">aspectRatio</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">aspectRatio</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

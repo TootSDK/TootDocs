@@ -17,7 +17,7 @@
     <a title="DomainBlock Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">TootSDK Docs</a> (63% documented)</p>
+        <p><a href="../index.html">TootSDK Docs</a> (64% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -103,6 +103,9 @@
                 <a href="../Enums/PostTootStreams.html">PostTootStreams</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/TootGrantType.html">TootGrantType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/TootSDKError.html">TootSDKError</a>
               </li>
               <li class="nav-group-task">
@@ -154,9 +157,6 @@
                 <a href="../Structs/AnnouncementReaction.html">AnnouncementReaction</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Attachment.html">Attachment</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/AttachmentMeta.html">AttachmentMeta</a>
               </li>
               <li class="nav-group-task">
@@ -199,6 +199,9 @@
                 <a href="../Structs/FeaturedTag.html">FeaturedTag</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/FederatedTimelineQuery.html">FederatedTimelineQuery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Filter.html">Filter</a>
               </li>
               <li class="nav-group-task">
@@ -208,13 +211,16 @@
                 <a href="../Structs/FollowAccountParams.html">FollowAccountParams</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/HashtagTimelineQuery.html">HashtagTimelineQuery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/IdentityProof.html">IdentityProof</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Instance.html">Instance</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Instance/URLs.html">– URLs</a>
+                <a href="../Structs/Instance/InstanceURLs.html">– InstanceURLs</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Instance/Stats.html">– Stats</a>
@@ -227,6 +233,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ListParams.html">ListParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalTimelineQuery.html">LocalTimelineQuery</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Marker.html">Marker</a>
@@ -286,6 +295,12 @@
                 <a href="../Structs/PushSubscription.html">PushSubscription</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/RegisterAccountErrors.html">RegisterAccountErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegisterAccountParams.html">RegisterAccountParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Relationship.html">Relationship</a>
               </li>
               <li class="nav-group-task">
@@ -343,7 +358,16 @@
                 <a href="../Structs/TootSource.html">TootSource</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/UpdateMediaAttachmentParams.html">UpdateMediaAttachmentParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/UploadMediaAttachmentParams.html">UploadMediaAttachmentParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadedMediaAttachment.html">UploadedMediaAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadedMediaAttachment/State.html">– State</a>
               </li>
             </ul>
           </li>
@@ -369,9 +393,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK11DomainBlockV2idSSvp"></a>
+                    <a name="/s:7TootSDK11DomainBlockV2idSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK11DomainBlockV2idSSvp">id</a>
+                    <a class="token" href="#/s:7TootSDK11DomainBlockV2idSSSgvp">id</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -386,7 +410,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -423,9 +447,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK11DomainBlockV9createdAt10Foundation4DateVvp"></a>
+                    <a name="/s:7TootSDK11DomainBlockV9createdAt10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/createdAt" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK11DomainBlockV9createdAt10Foundation4DateVvp">createdAt</a>
+                    <a class="token" href="#/s:7TootSDK11DomainBlockV9createdAt10Foundation4DateVSgvp">createdAt</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -440,7 +464,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">createdAt</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">createdAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -450,9 +474,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK11DomainBlockV8severityAA0cD8SeverityOvp"></a>
+                    <a name="/s:7TootSDK11DomainBlockV8severityAA0cD8SeverityOSgvp"></a>
                     <a name="//apple_ref/swift/Property/severity" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK11DomainBlockV8severityAA0cD8SeverityOvp">severity</a>
+                    <a class="token" href="#/s:7TootSDK11DomainBlockV8severityAA0cD8SeverityOSgvp">severity</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -467,7 +491,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">severity</span><span class="p">:</span> <span class="kt"><a href="../Enums/DomainBlockSeverity.html">DomainBlockSeverity</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">severity</span><span class="p">:</span> <span class="kt"><a href="../Enums/DomainBlockSeverity.html">DomainBlockSeverity</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -477,9 +501,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK11DomainBlockV11rejectMediaSbvp"></a>
+                    <a name="/s:7TootSDK11DomainBlockV11rejectMediaSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/rejectMedia" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK11DomainBlockV11rejectMediaSbvp">rejectMedia</a>
+                    <a class="token" href="#/s:7TootSDK11DomainBlockV11rejectMediaSbSgvp">rejectMedia</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -494,7 +518,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rejectMedia</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rejectMedia</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -504,9 +528,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK11DomainBlockV13rejectReportsSbvp"></a>
+                    <a name="/s:7TootSDK11DomainBlockV13rejectReportsSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/rejectReports" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK11DomainBlockV13rejectReportsSbvp">rejectReports</a>
+                    <a class="token" href="#/s:7TootSDK11DomainBlockV13rejectReportsSbSgvp">rejectReports</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -521,7 +545,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rejectReports</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rejectReports</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -612,9 +636,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK11DomainBlockV2id6domain9createdAt8severity11rejectMedia0J7Reports14privateComment06publicN09obfuscateACSS_SS10Foundation4DateVAA0cD8SeverityOS2bSSSgARSbtcfc"></a>
+                    <a name="/s:7TootSDK11DomainBlockV2id6domain9createdAt8severity11rejectMedia0J7Reports14privateComment06publicN09obfuscateACSSSg_SS10Foundation4DateVSgAA0cD8SeverityOSgSbSgAu2MSbtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(id:domain:createdAt:severity:rejectMedia:rejectReports:privateComment:publicComment:obfuscate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK11DomainBlockV2id6domain9createdAt8severity11rejectMedia0J7Reports14privateComment06publicN09obfuscateACSS_SS10Foundation4DateVAA0cD8SeverityOS2bSSSgARSbtcfc">init(id:<wbr>domain:<wbr>createdAt:<wbr>severity:<wbr>rejectMedia:<wbr>rejectReports:<wbr>privateComment:<wbr>publicComment:<wbr>obfuscate:<wbr>)</a>
+                    <a class="token" href="#/s:7TootSDK11DomainBlockV2id6domain9createdAt8severity11rejectMedia0J7Reports14privateComment06publicN09obfuscateACSSSg_SS10Foundation4DateVSgAA0cD8SeverityOSgSbSgAu2MSbtcfc">init(id:<wbr>domain:<wbr>createdAt:<wbr>severity:<wbr>rejectMedia:<wbr>rejectReports:<wbr>privateComment:<wbr>publicComment:<wbr>obfuscate:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -628,12 +652,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
             <span class="nv">domain</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-            <span class="nv">createdAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span>
-            <span class="nv">severity</span><span class="p">:</span> <span class="kt"><a href="../Enums/DomainBlockSeverity.html">DomainBlockSeverity</a></span><span class="p">,</span>
-            <span class="nv">rejectMedia</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
-            <span class="nv">rejectReports</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">createdAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?,</span>
+            <span class="nv">severity</span><span class="p">:</span> <span class="kt"><a href="../Enums/DomainBlockSeverity.html">DomainBlockSeverity</a></span><span class="p">?,</span>
+            <span class="nv">rejectMedia</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?,</span>
+            <span class="nv">rejectReports</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?,</span>
             <span class="nv">privateComment</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
             <span class="nv">publicComment</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
             <span class="nv">obfuscate</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>

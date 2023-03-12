@@ -17,7 +17,7 @@
     <a title="TootSDKFlavour Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">TootSDK Docs</a> (63% documented)</p>
+        <p><a href="../index.html">TootSDK Docs</a> (64% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -103,6 +103,9 @@
                 <a href="../Enums/PostTootStreams.html">PostTootStreams</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/TootGrantType.html">TootGrantType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/TootSDKError.html">TootSDKError</a>
               </li>
               <li class="nav-group-task">
@@ -154,9 +157,6 @@
                 <a href="../Structs/AnnouncementReaction.html">AnnouncementReaction</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Attachment.html">Attachment</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/AttachmentMeta.html">AttachmentMeta</a>
               </li>
               <li class="nav-group-task">
@@ -199,6 +199,9 @@
                 <a href="../Structs/FeaturedTag.html">FeaturedTag</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/FederatedTimelineQuery.html">FederatedTimelineQuery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Filter.html">Filter</a>
               </li>
               <li class="nav-group-task">
@@ -208,13 +211,16 @@
                 <a href="../Structs/FollowAccountParams.html">FollowAccountParams</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/HashtagTimelineQuery.html">HashtagTimelineQuery</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/IdentityProof.html">IdentityProof</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Instance.html">Instance</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Instance/URLs.html">– URLs</a>
+                <a href="../Structs/Instance/InstanceURLs.html">– InstanceURLs</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Instance/Stats.html">– Stats</a>
@@ -227,6 +233,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ListParams.html">ListParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalTimelineQuery.html">LocalTimelineQuery</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Marker.html">Marker</a>
@@ -286,6 +295,12 @@
                 <a href="../Structs/PushSubscription.html">PushSubscription</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/RegisterAccountErrors.html">RegisterAccountErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegisterAccountParams.html">RegisterAccountParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Relationship.html">Relationship</a>
               </li>
               <li class="nav-group-task">
@@ -343,7 +358,16 @@
                 <a href="../Structs/TootSource.html">TootSource</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/UpdateMediaAttachmentParams.html">UpdateMediaAttachmentParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/UploadMediaAttachmentParams.html">UploadMediaAttachmentParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadedMediaAttachment.html">UploadedMediaAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UploadedMediaAttachment/State.html">– State</a>
               </li>
             </ul>
           </li>
@@ -356,7 +380,7 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TootSDKFlavour</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TootSDKFlavour</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span><span class="p">,</span> <span class="kt">CaseIterable</span></code></pre>
 
                 </div>
               </div>
@@ -379,7 +403,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Mastodon server. API Documentation can be found at <a href="https://docs.joinmastodon.org/api/">https://docs.joinmastodon.org/api/</a></p>
 
                       </div>
                       <div class="declaration">
@@ -406,7 +430,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Pleroma server. API Documentation can be found at <a href="https://docs-develop.pleroma.social/backend/development/API/differences_in_mastoapi_responses/">https://docs-develop.pleroma.social/backend/development/API/differences_in_mastoapi_responses/</a></p>
 
                       </div>
                       <div class="declaration">
@@ -433,7 +457,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Pixelfed server. API Documentation can be found at <a href="https://docs.pixelfed.org/technical-documentation/api/">https://docs.pixelfed.org/technical-documentation/api/</a></p>
 
                       </div>
                       <div class="declaration">
@@ -441,6 +465,60 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">case</span> <span class="n">pixelfed</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A10SDKFlavourO9friendicayA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/friendica" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A10SDKFlavourO9friendicayA2CmF">friendica</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Friendica server. API Documentation can be found at <a href="https://wiki.friendi.ca/docs/api-mastodon">https://wiki.friendi.ca/docs/api-mastodon</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">friendica</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A10SDKFlavourO6akkomayA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/akkoma" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A10SDKFlavourO6akkomayA2CmF">akkoma</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Akkoma server. API Documentation can be found at <a href="https://docs.akkoma.dev/stable/development/API/differences_in_mastoapi_responses/">https://docs.akkoma.dev/stable/development/API/differences_in_mastoapi_responses/</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">akkoma</span></code></pre>
 
                         </div>
                       </div>
