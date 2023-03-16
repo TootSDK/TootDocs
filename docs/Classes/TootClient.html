@@ -100,7 +100,7 @@
                 <a href="../Enums/ListRepliesPolicy.html">ListRepliesPolicy</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/PostTootStreams.html">PostTootStreams</a>
+                <a href="../Enums/Timeline.html">Timeline</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/TootGrantType.html">TootGrantType</a>
@@ -127,6 +127,9 @@
           <li class="nav-group-name">
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TimelineQuery.html">TimelineQuery</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Protocols/TootStream.html">TootStream</a>
               </li>
@@ -368,6 +371,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/UploadedMediaAttachment/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UserTimelineQuery.html">UserTimelineQuery</a>
               </li>
             </ul>
           </li>
@@ -3799,9 +3805,9 @@ Note that the call will be successful even if the domain was not previously bloc
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK0A6ClientC15getHomeTimeline_5limitAA11PagedResultVySayAA4PostCGGAA0H4InfoVSg_SiSgtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getHomeTimeline(_:limit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC15getHomeTimeline_5limitAA11PagedResultVySayAA4PostCGGAA0H4InfoVSg_SiSgtYaKF">getHomeTimeline(_:<wbr>limit:<wbr>)</a>
+                    <a name="/s:7TootSDK0A6ClientC11getTimeline_8pageInfo5limitAA11PagedResultVySayAA4PostCGGAA0E0O_AA0iG0VSgSiSgtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getTimeline(_:pageInfo:limit:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC11getTimeline_8pageInfo5limitAA11PagedResultVySayAA4PostCGGAA0E0O_AA0iG0VSgSiSgtYaKF">getTimeline(_:<wbr>pageInfo:<wbr>limit:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Asynchronous
@@ -3812,14 +3818,14 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Retrieves the user&rsquo;s home timeline</p>
+                        <p>Retrieves a timeline</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getHomeTimeline</span><span class="p">(</span><span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTimeline</span><span class="p">(</span><span class="n">_</span> <span class="nv">timeline</span><span class="p">:</span> <span class="kt"><a href="../Enums/Timeline.html">Timeline</a></span><span class="p">,</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -3830,77 +3836,12 @@ Note that the call will be successful even if the domain was not previously bloc
                             <tr>
                               <td>
                                 <code>
-                                <em>pageInfo</em>
+                                <em>timeline</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>a PageInfo struct that tells the API how to page the response, typically with a minId set of the highest id you last saw</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>limit</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Maximum number of results to return (defaults to 20 on Mastodon with a max of 40)</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>a PagedResult containing the posts retrieved</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC16getLocalTimeline__5limitAA11PagedResultVySayAA4PostCGGAA0eF5QueryVSg_AA0H4InfoVSgSiSgtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getLocalTimeline(_:_:limit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC16getLocalTimeline__5limitAA11PagedResultVySayAA4PostCGGAA0eF5QueryVSg_AA0H4InfoVSgSiSgtYaKF">getLocalTimeline(_:<wbr>_:<wbr>limit:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Retrieves the user&rsquo;s local timeline</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getLocalTimeline</span><span class="p">(</span><span class="n">_</span> <span class="nv">query</span><span class="p">:</span> <span class="kt"><a href="../Structs/LocalTimelineQuery.html">LocalTimelineQuery</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>query</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>a <code><a href="../Structs/LocalTimelineQuery.html">LocalTimelineQuery</a></code> struct defining the parameters of the request</p>
+                                  <p>The timeline being requested</p>
                                 </div>
                               </td>
                             </tr>
@@ -3934,380 +3875,6 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div>
                         <h4>Return Value</h4>
                         <p>a PagedResult containing the posts retrieved</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC16getLocalTimeline_5limitAA11PagedResultVySayAA4PostCGGAA0H4InfoVSg_SiSgtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getLocalTimeline(_:limit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC16getLocalTimeline_5limitAA11PagedResultVySayAA4PostCGGAA0H4InfoVSg_SiSgtYaKF">getLocalTimeline(_:<wbr>limit:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Retrieves the user&rsquo;s local timeline</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getLocalTimeline</span><span class="p">(</span><span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>pageInfo</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>a PageInfo struct that tells the API how to page the response, typically with a minId set of the highest id you last saw</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>limit</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Maximum number of results to return (defaults to 20 on Mastodon with a max of 40)</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>a PagedResult containing the posts retrieved</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC20getFederatedTimeline__5limitAA11PagedResultVySayAA4PostCGGAA0eF5QueryVSg_AA0H4InfoVSgSiSgtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getFederatedTimeline(_:_:limit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC20getFederatedTimeline__5limitAA11PagedResultVySayAA4PostCGGAA0eF5QueryVSg_AA0H4InfoVSgSiSgtYaKF">getFederatedTimeline(_:<wbr>_:<wbr>limit:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Retrieves the user&rsquo;s federated timeline</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getFederatedTimeline</span><span class="p">(</span><span class="n">_</span> <span class="nv">query</span><span class="p">:</span> <span class="kt"><a href="../Structs/FederatedTimelineQuery.html">FederatedTimelineQuery</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>query</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>a <code><a href="../Structs/FederatedTimelineQuery.html">FederatedTimelineQuery</a></code> struct defining the parameters of the request</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>pageInfo</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>a PageInfo struct that tells the API how to page the response, typically with a minId set of the highest id you last saw</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>limit</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Maximum number of results to return (defaults to 20 on Mastodon with a max of 40)</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>a PagedResult containing the posts retrieved</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC20getFederatedTimeline_5limitAA11PagedResultVySayAA4PostCGGAA0H4InfoVSg_SiSgtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getFederatedTimeline(_:limit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC20getFederatedTimeline_5limitAA11PagedResultVySayAA4PostCGGAA0H4InfoVSg_SiSgtYaKF">getFederatedTimeline(_:<wbr>limit:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Retrieves the user&rsquo;s federated timeline</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getFederatedTimeline</span><span class="p">(</span><span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>pageInfo</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>a PageInfo struct that tells the API how to page the response, typically with a minId set of the highest id you last saw</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>limit</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Maximum number of results to return (defaults to 20 on Mastodon with a max of 40)</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>a PagedResult containing the posts retrieved</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC18getHashtagTimeline__5limitAA11PagedResultVySayAA4PostCGGAA0eF5QueryV_AA0H4InfoVSgSiSgtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getHashtagTimeline(_:_:limit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC18getHashtagTimeline__5limitAA11PagedResultVySayAA4PostCGGAA0eF5QueryV_AA0H4InfoVSgSiSgtYaKF">getHashtagTimeline(_:<wbr>_:<wbr>limit:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Retrieves public statuses containing the given hashtag</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getHashtagTimeline</span><span class="p">(</span><span class="n">_</span> <span class="nv">query</span><span class="p">:</span> <span class="kt"><a href="../Structs/HashtagTimelineQuery.html">HashtagTimelineQuery</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>query</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>a <code><a href="../Structs/HashtagTimelineQuery.html">HashtagTimelineQuery</a></code> struct defining the parameters of the request</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>pageInfo</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>a PageInfo struct that tells the API how to page the response, typically with a minId set of the highest id you last saw</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>limit</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Maximum number of results to return (defaults to 20 on Mastodon with a max of 40)</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>a PagedResult containing the posts retrieved</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC15getListTimeline6listId_5limitAA11PagedResultVySayAA4PostCGGSS_AA0J4InfoVSgSiSgtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getListTimeline(listId:_:limit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC15getListTimeline6listId_5limitAA11PagedResultVySayAA4PostCGGSS_AA0J4InfoVSgSiSgtYaKF">getListTimeline(listId:<wbr>_:<wbr>limit:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>View posts in the given list timeline.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getListTimeline</span><span class="p">(</span><span class="nv">listId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC12getFavorites_5limitAA11PagedResultVySayAA4PostCGGAA0G4InfoVSg_SiSgtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getFavorites(_:limit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC12getFavorites_5limitAA11PagedResultVySayAA4PostCGGAA0G4InfoVSg_SiSgtYaKF">getFavorites(_:<wbr>limit:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>View posts that the user has favourited.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getFavorites</span><span class="p">(</span><span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC12getBookmarks_5limitAA11PagedResultVySayAA4PostCGGAA0G4InfoVSg_SiSgtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getBookmarks(_:limit:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC12getBookmarks_5limitAA11PagedResultVySayAA4PostCGGAA0G4InfoVSg_SiSgtYaKF">getBookmarks(_:<wbr>limit:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>View posts that the user has bookmarked.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getBookmarks</span><span class="p">(</span><span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>

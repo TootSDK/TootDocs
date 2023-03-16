@@ -99,7 +99,7 @@
                 <a href="Enums/ListRepliesPolicy.html">ListRepliesPolicy</a>
               </li>
               <li class="nav-group-task">
-                <a href="Enums/PostTootStreams.html">PostTootStreams</a>
+                <a href="Enums/Timeline.html">Timeline</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/TootGrantType.html">TootGrantType</a>
@@ -126,6 +126,9 @@
           <li class="nav-group-name">
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/TimelineQuery.html">TimelineQuery</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Protocols/TootStream.html">TootStream</a>
               </li>
@@ -368,6 +371,9 @@
               <li class="nav-group-task">
                 <a href="Structs/UploadedMediaAttachment/State.html">– State</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Structs/UserTimelineQuery.html">UserTimelineQuery</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -398,7 +404,7 @@ It is designed to work with all major servers (Mastodon, Pleroma, PixelFed etc).
 <p><img src="https://raw.githubusercontent.com/TootSDK/TootSDK/main/media/overview.png" alt="overview of how TootSDK integrates with fedi platforms"></p>
 <h2 id='why-make-tootsdk' class='heading'>Why make TootSDK?</h2>
 
-<p>When app developers build apps for Mastodon and the Fediverse, every developer ends up having to solved the same set of problems when it comes to the API and data model.</p>
+<p>When app developers build apps for Mastodon and the Fediverse, every developer ends up having to solve the same set of problems when it comes to the API and data model.</p>
 
 <p><a href="https://m.iamkonstantin.eu/konstantin">Konstantin</a> and <a href="https://social.davidgarywood.com/@davidgarywood">Dave</a> decided to share this effort.
 TootSDK is a shared Swift Package that any client app can be built on.</p>
@@ -480,30 +486,118 @@ TootSDK is a shared Swift Package that any client app can be built on.</p>
 </code></pre>
 
 <p>We recommend keeping the accessToken somewhere secure, for example the Keychain.</p>
-<h3 id='accessing-a-user-39-s-home-feedfeed' class='heading'>Accessing a user&rsquo;s home feedfeed</h3>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">posts</span> <span class="o">=</span> <span class="k">try</span> <span class="n">await</span> <span class="n">client</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="nf">stream</span><span class="p">(</span><span class="o">.</span><span class="n">timeLineHome</span><span class="p">)</span>
-</code></pre>
-<h3 id='creating-an-account' class='heading'>Creating an account</h3>
+<h2 id='usage-and-key-concepts' class='heading'>Usage and key concepts</h2>
 
-<ul>
-<li><p>Register the app with the following scopes <code>[&quot;read&quot;, &quot;write:accounts&quot;]</code>.</p></li>
-<li><p>Get instance information and determine the sign up requirements. Some instances may not be open for registration while others may require additional verification.</p></li>
-</ul>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">instance</span> <span class="o">=</span> <span class="k">try</span> <span class="n">await</span> <span class="n">client</span><span class="o">.</span><span class="nf">getInstanceInfo</span><span class="p">()</span>
-<span class="k">if</span> <span class="n">instance</span><span class="o">.</span><span class="n">registrations</span> <span class="o">==</span> <span class="kc">false</span> <span class="p">{</span>
-  <span class="c1">// instance not open for registration</span>
-  <span class="k">return</span>
-<span class="p">}</span>
-<span class="c1">// ...</span>
-</code></pre>
+<p>Once you have your client connected, you&rsquo;re going to want to use it. Our example apps and reference docs will help you get into the nitty gritty of it all, but some key concepts are highlighted here.</p>
 
-<ul>
-<li>Use the <code>registerAccount</code> method to create a user account:</li>
-</ul>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">params</span> <span class="o">=</span> <span class="kt">RegisterAccountParams</span><span class="p">(</span>
-      <span class="nv">username</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span> <span class="nv">email</span><span class="p">:</span> <span class="n">email</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="n">password</span><span class="p">,</span> <span class="nv">agreement</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">locale</span><span class="p">:</span> <span class="s">"en"</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">token</span> <span class="o">=</span> <span class="k">try</span> <span class="n">await</span> <span class="n">client</span><span class="o">.</span><span class="nf">registerAccount</span><span class="p">(</span><span class="nv">params</span><span class="p">:</span> <span class="n">params</span><span class="p">)</span>
-</code></pre>
+<details>
+<summary>Accessing a user&rsquo;s timeline</summary>
+
+
+There are several different types of timeline in TootSDK that you can access, for example their home timeline, the local timeline of their instance, or the federated timeline. These are all enumerated in the `Timeline` enum.
+
+You can retrieve the latest posts (up to 40 on Mastodon) with a call like so:
+
+&ldquo;`swift
+let items = try await client.getTimeline(.home)
+let posts = items.result
+&rdquo;`
+TootSDK returns Posts, Accounts, Lists and DomainBblocks as `PagedResult`. In our code, `items` is a PagedResult struct. It contains a property called `result` which will be the type of data request (in this case an array of `Post`).
+</details>
+
+<details>
+<summary>Paging requests</summary>
+
+
+Some requests in TootSDK are paging. This means that we can send and receive PagedInfo structs when making these requests. The properties in this struct are:
+
+- maxId (Return results older than ID)
+- minId (Return results immediately newer than ID)
+- sinceId (Return results newer than ID)
+
+So for example, if we want all posts from the user&rsquo;s home timeline that are newer than post ID 100, we could write:
+
+&ldquo;`swift
+let items = try await client.getTimeline(.home, PagedInfo(minId: 100))
+let posts = items.result
+&rdquo;`
+
+Paged requests also deliver a PagedInfo struct as a property of the `PagedResult` returned, which means you can use that for subsequent requests of the same type.
+
+&ldquo;`swift
+
+var pagedInfo: PagedInfo?
+var posts: [Post] = []
+
+func retrievePosts() async {
+    let items = try await client.getTimeline(.home, pagedInfo)
+    posts.append(contentsOf: items.result)    
+    self.pagedInfo = items.pagedInfo
+}
+
+&rdquo;`
+
+</details>
+
+<details>
+<summary>Streaming timelines</summary>
+
+
+In TootSDK it is possible to subscribe to some types of content with AsyncSequences, a concept we&rsquo;ve wrapped up in our `TootStream` object.
+
+&ldquo;`swift
+for posts in try await client.data.stream(.home) {
+    print(posts)
+}
+&rdquo;`
+
+Underneath the hood, this uses our Paging mechanism. This means that when you ask the client to refresh that stream, it will deliver you new results, from after the ones you requested.
+
+&ldquo;`swift
+client.data.refresh(.home)
+&rdquo;`
+
+You can also pass an initial PagedInfo value to the stream call. For example, to start steaming all posts from the user&rsquo;s home timeline that are newer than post ID 100:
+
+&ldquo;`swift
+for posts in try await client.data.stream(.home, PagedInfo(minId: 100) {
+&rdquo;`
+
+Some timelines require associated query parameters to configure. Luckily these are associated values that their timeline enumeration require when creating - so you can&rsquo;t miss them!
+
+&ldquo;`swift
+
+for posts in try await client.data.stream(HashtagTimelineQuery(tag: &quot;iOSDev&rdquo;) {
+    print(posts)
+}
+&ldquo;`
+
+</details>
+
+<details>
+<summary>Creating an account</summary>
+
+* Register the app with the following scopes `[&quot;read&rdquo;, &ldquo;write:accounts&rdquo;]`.
+
+* Get instance information and determine the sign up requirements. Some instances may not be open for registration while others may require additional verification.
+
+&ldquo;`swift
+let instance = try await client.getInstanceInfo()
+if instance.registrations == false {
+  // instance not open for registration
+  return
+}
+// &hellip;
+&rdquo;`
+
+* Use the `registerAccount` method to create a user account:
+
+&ldquo;`swift
+let params = RegisterAccountParams(
+      username: name, email: email, password: password, agreement: true, locale: &quot;en&rdquo;)
+let token = try await client.registerAccount(params: params)
+&ldquo;`
+</details>
 <h2 id='further-documentation' class='heading'>Further Documentation 📖</h2>
 
 <ul>
