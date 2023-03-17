@@ -785,13 +785,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FederatedTimelineQuery.swift",
-      "line": 8,
-      "symbol": "FederatedTimelineQuery.init(onlyMedia:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
       "line": 6,
       "symbol": "Filter",
@@ -883,13 +876,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/HashtagTimelineQuery.swift",
-      "line": 12,
-      "symbol": "HashtagTimelineQuery.init(tag:anyTags:allTags:noneTags:onlyMedia:local:remote:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/IdentityProof.swift",
       "line": 6,
       "symbol": "IdentityProof",
@@ -977,13 +963,6 @@
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/ListParams.swift",
       "line": 13,
       "symbol": "ListParams.init(title:repliesPolicy:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/LocalTimelineQuery.swift",
-      "line": 8,
-      "symbol": "LocalTimelineQuery.init(onlyMedia:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -1485,6 +1464,76 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/FederatedTimelineQuery.swift",
+      "line": 8,
+      "symbol": "FederatedTimelineQuery.init(onlyMedia:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/FederatedTimelineQuery.swift",
+      "line": 18,
+      "symbol": "FederatedTimelineQuery.getQueryItems()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/HashtagTimelineQuery.swift",
+      "line": 9,
+      "symbol": "HashtagTimelineQuery.init(tag:anyTags:allTags:noneTags:onlyMedia:local:remote:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/HashtagTimelineQuery.swift",
+      "line": 43,
+      "symbol": "HashtagTimelineQuery.getQueryItems()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/LocalTimelineQuery.swift",
+      "line": 8,
+      "symbol": "LocalTimelineQuery.init(onlyMedia:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/LocalTimelineQuery.swift",
+      "line": 18,
+      "symbol": "LocalTimelineQuery.getQueryItems()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/TimelineQuery.swift",
+      "line": 10,
+      "symbol": "TimelineQuery",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/TimelineQuery.swift",
+      "line": 11,
+      "symbol": "TimelineQuery.getQueryItems()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/UserTimelineQuery.swift",
+      "line": 9,
+      "symbol": "UserTimelineQuery.init(userId:onlyMedia:excludeReplies:excludeBoosts:pinned:tagged:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Timeline/UserTimelineQuery.swift",
+      "line": 39,
+      "symbol": "UserTimelineQuery.getQueryItems()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TootApplication.swift",
       "line": 8,
       "symbol": "TootApplication.init(name:website:vapidKey:redirectUri:clientId:clientSecret:id:)",
@@ -1982,38 +2031,38 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream.swift",
-      "line": 11,
-      "symbol": "TootStream.ResponseType",
-      "symbol_kind": "source.lang.swift.decl.associatedtype",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream.swift",
-      "line": 34,
-      "symbol": "PostTootStreams.ResponseType",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream.swift",
-      "line": 39,
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream/TootStream+Accounts.swift",
+      "line": 8,
       "symbol": "AccountTootStreams.verifyCredentials",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream.swift",
-      "line": 40,
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream/TootStream+Accounts.swift",
+      "line": 9,
       "symbol": "AccountTootStreams.account(id:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream.swift",
-      "line": 44,
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream/TootStream+Accounts.swift",
+      "line": 13,
       "symbol": "AccountTootStreams.ResponseType",
       "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream/TootStream+Posts.swift",
+      "line": 7,
+      "symbol": "Timeline.ResponseType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootStream/TootStream.swift",
+      "line": 11,
+      "symbol": "TootStream.ResponseType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
       "warning": "undocumented"
     }
   ],
