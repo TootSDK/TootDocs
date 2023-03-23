@@ -751,35 +751,7 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FeaturedTag.swift",
-      "line": 8,
-      "symbol": "FeaturedTag.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FeaturedTag.swift",
-      "line": 9,
-      "symbol": "FeaturedTag.url",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FeaturedTag.swift",
-      "line": 10,
-      "symbol": "FeaturedTag.postsCount",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FeaturedTag.swift",
-      "line": 11,
-      "symbol": "FeaturedTag.lastPostAt",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FeaturedTag.swift",
-      "line": 13,
+      "line": 23,
       "symbol": "FeaturedTag.init(id:name:url:postsCount:lastPostAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
