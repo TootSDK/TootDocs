@@ -142,9 +142,6 @@
                 <a href="../Structs/AccessToken.html">AccessToken</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/AccountLookup.html">AccountLookup</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/Activity.html">Activity</a>
               </li>
               <li class="nav-group-task">
@@ -3032,9 +3029,9 @@ Note that the call will be successful even if the domain was not previously bloc
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK0A6ClientC13lookupAccount3uriAA0E6LookupVSS_tYaKF"></a>
+                    <a name="/s:7TootSDK0A6ClientC13lookupAccount3uriAA0E0CSS_tYaKF"></a>
                     <a name="//apple_ref/swift/Method/lookupAccount(uri:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC13lookupAccount3uriAA0E6LookupVSS_tYaKF">lookupAccount(uri:<wbr>)</a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC13lookupAccount3uriAA0E0CSS_tYaKF">lookupAccount(uri:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Asynchronous
@@ -3045,14 +3042,14 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Mastodon Specific. Looks up an account based on it&rsquo;s account name or URI, and returns a payload that containts the instance&rsquo;s account id</p>
+                        <p>Looks up an account based on it&rsquo;s account name or URI, and returns a payload that contains the instance&rsquo;s account id</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lookupAccount</span><span class="p">(</span><span class="nv">uri</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/AccountLookup.html">AccountLookup</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lookupAccount</span><span class="p">(</span><span class="nv">uri</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Account.html">Account</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3068,7 +3065,7 @@ Note that the call will be successful even if the domain was not previously bloc
                               </td>
                               <td>
                                 <div>
-                                  <p>account name on the instance you&rsquo;re on or a users URI (e.g @<a href="mailto:test@instance.test">test@instance.test</a>)</p>
+                                  <p>account name on the instance you&rsquo;re on or a users URI (e.g <a href="mailto:test@instance.test">test@instance.test</a>)</p>
                                 </div>
                               </td>
                             </tr>
@@ -3077,7 +3074,7 @@ Note that the call will be successful even if the domain was not previously bloc
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>AccountLookup, a payload containing information about the account looked up</p>
+                        <p>the looked up account, or an error if unable to retrieve</p>
                       </div>
                     </section>
                   </div>
