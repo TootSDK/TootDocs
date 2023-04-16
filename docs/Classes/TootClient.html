@@ -17,7 +17,7 @@
     <a title="TootClient Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">TootSDK Docs</a> (64% documented)</p>
+        <p><a href="../index.html">TootSDK Docs</a> (63% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -334,7 +334,7 @@
                 <a href="../Structs/Tag.html">Tag</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/TagHistory.html">TagHistory</a>
+                <a href="../Structs/Tag/History.html">– History</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/TootApplication.html">TootApplication</a>
@@ -356,6 +356,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/TootSource.html">TootSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TrendingLink.html">TrendingLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TrendingLink/History.html">– History</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/UpdateMediaAttachmentParams.html">UpdateMediaAttachmentParams</a>
@@ -1902,9 +1908,9 @@ Note that the call will be successful even if the domain was not previously bloc
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK0A6ClientC23removeAccountsFromAList2id6paramsySS_AA06RemoveeF10ListParamsVtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/removeAccountsFromAList(id:params:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC23removeAccountsFromAList2id6paramsySS_AA06RemoveeF10ListParamsVtYaKF">removeAccountsFromAList(id:<wbr>params:<wbr>)</a>
+                    <a name="/s:7TootSDK0A6ClientC22removeAccountsFromList2id6paramsySS_AA06RemoveefG6ParamsVtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/removeAccountsFromList(id:params:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC22removeAccountsFromList2id6paramsySS_AA06RemoveefG6ParamsVtYaKF">removeAccountsFromList(id:<wbr>params:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Asynchronous
@@ -1915,14 +1921,14 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Add accounts to a list</p>
+                        <p>Remove account from a list</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeAccountsFromAList</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/RemoveAccountsFromListParams.html">RemoveAccountsFromListParams</a></span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeAccountsFromList</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/RemoveAccountsFromListParams.html">RemoveAccountsFromListParams</a></span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -3925,6 +3931,201 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div>
                         <h4>Return Value</h4>
                         <p>a PagedResult containing the posts retrieved</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC15getTrendingTags5limit6offsetSayAA3TagVGSiSg_AJtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getTrendingTags(limit:offset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC15getTrendingTags5limit6offsetSayAA3TagVGSiSg_AJtYaKF">getTrendingTags(limit:<wbr>offset:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get trending tags</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTrendingTags</span><span class="p">(</span><span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Tag.html">Tag</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of results to return. Defaults to 10, max 20.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Skip the first n results.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of <code><a href="../Structs/Tag.html">Tag</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC16getTrendingPosts5limit6offsetSayAA4PostCGSiSg_AJtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getTrendingPosts(limit:offset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC16getTrendingPosts5limit6offsetSayAA4PostCGSiSg_AJtYaKF">getTrendingPosts(limit:<wbr>offset:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get trending posts</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTrendingPosts</span><span class="p">(</span><span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Post.html">Post</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of results to return. Defaults to 20, max 40.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Skip the first n results.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of <code><a href="../Classes/Post.html">Post</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC16getTrendingLinks5limit6offsetSayAA0E4LinkVGSiSg_AJtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getTrendingLinks(limit:offset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC16getTrendingLinks5limit6offsetSayAA0E4LinkVGSiSg_AJtYaKF">getTrendingLinks(limit:<wbr>offset:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get trending links</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTrendingLinks</span><span class="p">(</span><span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/TrendingLink.html">TrendingLink</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of results to return. Defaults to 10, max 20.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Skip the first n results.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of <code><a href="../Structs/TrendingLink.html">TrendingLink</a></code>.</p>
                       </div>
                     </section>
                   </div>

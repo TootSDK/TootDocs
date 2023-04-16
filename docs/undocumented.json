@@ -1416,8 +1416,8 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TagHistory.swift",
-      "line": 8,
-      "symbol": "TagHistory.init(day:uses:accounts:)",
+      "line": 9,
+      "symbol": "Tag.History.init(day:uses:accounts:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -1646,6 +1646,132 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 10,
+      "symbol": "TrendingLink",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 10,
+      "symbol": "TrendingLink",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 11,
+      "symbol": "TrendingLink.init(url:title:description:authorName:authorUrl:providerName:providerUrl:html:width:height:image:embedUrl:blurhash:history:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 41,
+      "symbol": "TrendingLink.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 42,
+      "symbol": "TrendingLink.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 43,
+      "symbol": "TrendingLink.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 44,
+      "symbol": "TrendingLink.authorName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 45,
+      "symbol": "TrendingLink.authorUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 46,
+      "symbol": "TrendingLink.providerName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 47,
+      "symbol": "TrendingLink.providerUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 48,
+      "symbol": "TrendingLink.html",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 49,
+      "symbol": "TrendingLink.width",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 50,
+      "symbol": "TrendingLink.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 51,
+      "symbol": "TrendingLink.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 52,
+      "symbol": "TrendingLink.embedUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 53,
+      "symbol": "TrendingLink.blurhash",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLink.swift",
+      "line": 54,
+      "symbol": "TrendingLink.history",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TrendingLinkHistory.swift",
+      "line": 13,
+      "symbol": "TrendingLink.History.init(day:uses:accounts:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UpdateMediaAttachmentParams.swift",
       "line": 6,
       "symbol": "UpdateMediaAttachmentParams",
@@ -1860,6 +1986,13 @@
       "line": 10,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 10,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

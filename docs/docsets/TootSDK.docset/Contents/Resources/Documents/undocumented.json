@@ -393,20 +393,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/AccountLookup.swift",
-      "line": 8,
-      "symbol": "AccountLookup",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/AccountLookup.swift",
-      "line": 9,
-      "symbol": "AccountLookup.init(id:username:acct:displayName:locked:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Activity.swift",
       "line": 8,
       "symbol": "Activity.init(week:posts:logins:registrations:)",
@@ -1969,14 +1955,7 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 212,
-      "symbol": "TootClient",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 222,
+      "line": 223,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
@@ -1990,14 +1969,21 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 285,
+      "line": 233,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 296,
       "symbol": "TootClient.collectRegistrationToken(clientId:clientSecret:callbackURI:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 303,
+      "line": 314,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
