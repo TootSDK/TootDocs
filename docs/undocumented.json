@@ -134,6 +134,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/HTTP/PagedResult.swift",
+      "line": 11,
+      "symbol": "PagedResult",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/HTTP/Pagination.swift",
       "line": 6,
       "symbol": "Pagination",
@@ -1311,13 +1318,6 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Report.swift",
-      "line": 8,
-      "symbol": "Report.id",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Report.swift",
       "line": 9,
       "symbol": "Report.actionTaken",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -1410,7 +1410,7 @@
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Tag.swift",
       "line": 8,
-      "symbol": "Tag.init(name:url:history:)",
+      "symbol": "Tag.init(name:url:history:following:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -1563,9 +1563,37 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TootNotification.swift",
-      "line": 53,
+      "line": 43,
+      "symbol": "TootNotification.NotificationType.update",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TootNotification.swift",
+      "line": 55,
       "symbol": "TootNotification.NotificationType",
       "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TootNotificationParams.swift",
+      "line": 10,
+      "symbol": "TootNotificationParams",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TootNotificationParams.swift",
+      "line": 11,
+      "symbol": "TootNotificationParams.init(excludeTypes:types:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/TootNotificationParams.swift",
+      "line": 16,
+      "symbol": "TootNotificationParams.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -1821,6 +1849,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Notifications.swift",
+      "line": 63,
+      "symbol": "TootClient.createQuery(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
       "line": 48,
       "symbol": "TootClient.getContext(id:)",
@@ -1962,6 +1997,13 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 8,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
       "line": 9,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
@@ -1986,6 +2028,13 @@
       "line": 10,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 10,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HashtagTimelineQuery Structure Reference</title>
+    <title>TootNotificationParams Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/HashtagTimelineQuery" class="dashAnchor"></a>
-    <a title="HashtagTimelineQuery Structure Reference"></a>
+    <a name="//apple_ref/swift/Struct/TootNotificationParams" class="dashAnchor"></a>
+    <a title="TootNotificationParams Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">TootSDK Docs</a> (63% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">TootSDK Reference</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        HashtagTimelineQuery Structure Reference
+        TootNotificationParams Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -388,16 +388,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>HashtagTimelineQuery</h1>
+            <h1>TootNotificationParams</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HashtagTimelineQuery</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">HashtagTimelineQuery</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TimelineQuery.html">TimelineQuery</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TootNotificationParams</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
 
                 </div>
               </div>
-            <p>Specifies the parameters for a hashtag timeline request</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -406,9 +405,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK20HashtagTimelineQueryV3tag7anyTags03allH004noneH09onlyMedia5local6remoteACSS_SaySSGSgA2LSbSgA2Mtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(tag:anyTags:allTags:noneTags:onlyMedia:local:remote:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK20HashtagTimelineQueryV3tag7anyTags03allH004noneH09onlyMedia5local6remoteACSS_SaySSGSgA2LSbSgA2Mtcfc">init(tag:<wbr>anyTags:<wbr>allTags:<wbr>noneTags:<wbr>onlyMedia:<wbr>local:<wbr>remote:<wbr>)</a>
+                    <a name="/s:7TootSDK0A18NotificationParamsV12excludeTypes5typesACSayAA0aC0V0C4TypeOGSg_AKtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(excludeTypes:types:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A18NotificationParamsV12excludeTypes5typesACSayAA0aC0V0C4TypeOGSg_AKtcfc">init(excludeTypes:<wbr>types:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -423,7 +422,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">anyTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">allTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">noneTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">onlyMedia</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">local</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remote</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">excludeTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/TootNotification.html">TootNotification</a></span><span class="o">.</span><span class="kt">NotificationType</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">types</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/TootNotification.html">TootNotification</a></span><span class="o">.</span><span class="kt">NotificationType</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -433,198 +432,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK20HashtagTimelineQueryV3tagSSvp"></a>
-                    <a name="//apple_ref/swift/Property/tag" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK20HashtagTimelineQueryV3tagSSvp">tag</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The name of the hashtag, not including the <code>#</code> symbol</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK20HashtagTimelineQueryV7anyTagsSaySSGSgvp"></a>
-                    <a name="//apple_ref/swift/Property/anyTags" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK20HashtagTimelineQueryV7anyTagsSaySSGSgvp">anyTags</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return statuses that contain any of these additional tags</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">anyTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK20HashtagTimelineQueryV7allTagsSaySSGSgvp"></a>
-                    <a name="//apple_ref/swift/Property/allTags" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK20HashtagTimelineQueryV7allTagsSaySSGSgvp">allTags</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return statuses that contain all of these additional tags</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">allTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK20HashtagTimelineQueryV8noneTagsSaySSGSgvp"></a>
-                    <a name="//apple_ref/swift/Property/noneTags" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK20HashtagTimelineQueryV8noneTagsSaySSGSgvp">noneTags</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return statuses that contain none of these additional tags</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">noneTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK20HashtagTimelineQueryV9onlyMediaSbSgvp"></a>
-                    <a name="//apple_ref/swift/Property/onlyMedia" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK20HashtagTimelineQueryV9onlyMediaSbSgvp">onlyMedia</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return only statuses with media attachments</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">onlyMedia</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK20HashtagTimelineQueryV5localSbSgvp"></a>
-                    <a name="//apple_ref/swift/Property/local" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK20HashtagTimelineQueryV5localSbSgvp">local</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return only local statuses</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">local</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK20HashtagTimelineQueryV6remoteSbSgvp"></a>
-                    <a name="//apple_ref/swift/Property/remote" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK20HashtagTimelineQueryV6remoteSbSgvp">remote</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return only remote statuses</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">remote</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK20HashtagTimelineQueryV03getE5ItemsSay10Foundation12URLQueryItemVGyF"></a>
-                    <a name="//apple_ref/swift/Method/getQueryItems()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK20HashtagTimelineQueryV03getE5ItemsSay10Foundation12URLQueryItemVGyF">getQueryItems()</a>
+                    <a name="/s:7TootSDK0A18NotificationParamsVACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A18NotificationParamsVACycfc">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -639,7 +449,61 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getQueryItems</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">URLQueryItem</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A18NotificationParamsV12excludeTypesSayAA0aC0V0C4TypeOGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/excludeTypes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A18NotificationParamsV12excludeTypesSayAA0aC0V0C4TypeOGSgvp">excludeTypes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Types of notifications to exclude from the search results</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">excludeTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/TootNotification.html">TootNotification</a></span><span class="o">.</span><span class="kt">NotificationType</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A18NotificationParamsV5typesSayAA0aC0V0C4TypeOGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/types" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A18NotificationParamsV5typesSayAA0aC0V0C4TypeOGSgvp">types</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Types of notifications to include in the search results</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">types</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/TootNotification.html">TootNotification</a></span><span class="o">.</span><span class="kt">NotificationType</span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
