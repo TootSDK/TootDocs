@@ -463,6 +463,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Alerts.swift",
+      "line": 30,
+      "symbol": "Alerts.update",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Announcement.swift",
       "line": 8,
       "symbol": "Announcement.init(id:content:publishedAt:published:allDay:createdAt:updatedAt:read:reactions:startsAt:endsAt:)",
@@ -1261,6 +1268,76 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionParams.swift",
+      "line": 9,
+      "symbol": "PushSubscriptionParams.subscription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionParams.swift",
+      "line": 10,
+      "symbol": "PushSubscriptionParams.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionParams.swift",
+      "line": 12,
+      "symbol": "PushSubscriptionParams.Subscription",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionParams.swift",
+      "line": 15,
+      "symbol": "PushSubscriptionParams.Subscription.keys",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionParams.swift",
+      "line": 18,
+      "symbol": "PushSubscriptionParams.Keys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionParams.swift",
+      "line": 26,
+      "symbol": "PushSubscriptionParams.SubscriptionData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionParams.swift",
+      "line": 27,
+      "symbol": "PushSubscriptionParams.SubscriptionData.alerts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionUpdateParams.swift",
+      "line": 9,
+      "symbol": "PushSubscriptionUpdateParams.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionUpdateParams.swift",
+      "line": 10,
+      "symbol": "PushSubscriptionUpdateParams.SubscriptionData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscriptionUpdateParams.swift",
+      "line": 11,
+      "symbol": "PushSubscriptionUpdateParams.SubscriptionData.alerts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/RegisterAccountErrors.swift",
       "line": 10,
       "symbol": "RegisterAccountErrors",
@@ -1845,13 +1922,6 @@
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+ASWebAuthentication.swift",
       "line": 58,
       "symbol": "TootPresentationAnchor.presentationAnchor(for:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Notifications.swift",
-      "line": 63,
-      "symbol": "TootClient.createQuery(from:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },

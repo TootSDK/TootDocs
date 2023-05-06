@@ -294,6 +294,24 @@
                 <a href="Structs/PushSubscription.html">PushSubscription</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/PushSubscriptionParams.html">PushSubscriptionParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PushSubscriptionParams/Subscription.html">– Subscription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PushSubscriptionParams/Keys.html">– Keys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PushSubscriptionParams/SubscriptionData.html">– SubscriptionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PushSubscriptionUpdateParams.html">PushSubscriptionUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PushSubscriptionUpdateParams/SubscriptionData.html">– SubscriptionData</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/RegisterAccountErrors.html">RegisterAccountErrors</a>
               </li>
               <li class="nav-group-task">
@@ -448,6 +466,19 @@ TootSDK is a shared Swift Package that any client app can be built on.</p>
   <span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="k">try</span> <span class="n">await</span> <span class="kt">TootClient</span><span class="p">(</span><span class="nv">connect</span><span class="p">:</span> <span class="n">instanceURL</span><span class="p">,</span> <span class="nv">accessToken</span><span class="p">:</span> <span class="s">"USERACCESSTOKEN"</span><span class="p">)</span>
 </code></pre>
 <h3 id='signing-in-for-macos-and-ios' class='heading'>Signing in (for macOS and iOS):</h3>
+
+<details>
+<summary>Network Sandbox Capability/Entitlement (macOS)</summary>
+
+When using TootSDK within a macOS target you will need to enable the `com.apple.security.network.client` entitlement in your entitlements file or within the **Signing & Capabilities** tab in Xcode.
+
+&ldquo;`
+<key>com.apple.security.network.client</key>
+<true/>
+&rdquo;`
+
+![Xcode target view showing the Signing & Capabilities tab with and arrow pointing to a checked Outgoing Connections (Client) option](media/network_sandbox_capability_entitlement.png)
+</details>
 
 <ul>
 <li>Instantiate your client without a token:</li>

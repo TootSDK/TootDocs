@@ -295,6 +295,24 @@
                 <a href="../Structs/PushSubscription.html">PushSubscription</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PushSubscriptionParams.html">PushSubscriptionParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushSubscriptionParams/Subscription.html">– Subscription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushSubscriptionParams/Keys.html">– Keys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushSubscriptionParams/SubscriptionData.html">– SubscriptionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushSubscriptionUpdateParams.html">PushSubscriptionUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushSubscriptionUpdateParams/SubscriptionData.html">– SubscriptionData</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/RegisterAccountErrors.html">RegisterAccountErrors</a>
               </li>
               <li class="nav-group-task">
@@ -2212,24 +2230,91 @@ Note that the call will be successful even if the domain was not previously bloc
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK0A6ClientC11createQuery4fromSay10Foundation12URLQueryItemVGAA0A18NotificationParamsV_tF"></a>
-                    <a name="//apple_ref/swift/Method/createQuery(from:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC11createQuery4fromSay10Foundation12URLQueryItemVGAA0A18NotificationParamsV_tF">createQuery(from:<wbr>)</a>
+                    <a name="/s:7TootSDK0A6ClientC22createPushSubscription6paramsAA0eF0VAA0eF6ParamsV_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/createPushSubscription(params:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC22createPushSubscription6paramsAA0eF0VAA0eF6ParamsV_tYaKF">createPushSubscription(params:<wbr>)</a>
                     </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Add a Web Push API subscription to receive notifications. Each access token can have one push subscription.</p>
+
+<p>If you create a new subscription, the old subscription is deleted.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createQuery</span><span class="p">(</span><span class="n">from</span> <span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/TootNotificationParams.html">TootNotificationParams</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">URLQueryItem</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createPushSubscription</span><span class="p">(</span><span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/PushSubscriptionParams.html">PushSubscriptionParams</a></span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PushSubscription.html">PushSubscription</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC19getPushSubscriptionAA0eF0VyYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getPushSubscription()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC19getPushSubscriptionAA0eF0VyYaKF">getPushSubscription()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>View the PushSubscription currently associated with this access token.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getPushSubscription</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PushSubscription.html">PushSubscription</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC22changePushSubscription6paramsAA0eF0VAA0eF12UpdateParamsV_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/changePushSubscription(params:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC22changePushSubscription6paramsAA0eF0VAA0eF12UpdateParamsV_tYaKF">changePushSubscription(params:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the current push subscription. Only the data part can be updated.</p>
+
+<p>To change fundamentals, a new subscription must be created instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changePushSubscription</span><span class="p">(</span><span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/PushSubscriptionUpdateParams.html">PushSubscriptionUpdateParams</a></span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PushSubscription.html">PushSubscription</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3450,6 +3535,40 @@ Note that the call will be successful even if the domain was not previously bloc
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7TootSDK0A6ClientC18getBlockedAccounts_5limitAA11PagedResultVySayAA7AccountCGGAA0H4InfoVSg_SiSgtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getBlockedAccounts(_:limit:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC18getBlockedAccounts_5limitAA11PagedResultVySayAA7AccountCGGAA0H4InfoVSg_SiSgtYaKF">getBlockedAccounts(_:<wbr>limit:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get all accounts which the current account is blocking</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getBlockedAccounts</span><span class="p">(</span><span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Account.html">Account</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the accounts requested</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7TootSDK0A6ClientC11muteAccount2by6paramsAA12RelationshipVSS_AA04MuteE6ParamsVSgtYaKF"></a>
                     <a name="//apple_ref/swift/Method/muteAccount(by:params:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7TootSDK0A6ClientC11muteAccount2by6paramsAA12RelationshipVSS_AA04MuteE6ParamsVSgtYaKF">muteAccount(by:<wbr>params:<wbr>)</a>
@@ -3549,6 +3668,40 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div>
                         <h4>Return Value</h4>
                         <p>the relationship to the account requested, or an error if unable to retrieve</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC16getMutedAccounts_5limitAA11PagedResultVySayAA7AccountCGGAA0H4InfoVSg_SiSgtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getMutedAccounts(_:limit:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC16getMutedAccounts_5limitAA11PagedResultVySayAA7AccountCGGAA0H4InfoVSg_SiSgtYaKF">getMutedAccounts(_:<wbr>limit:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get all accounts which the current account is blocking</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMutedAccounts</span><span class="p">(</span><span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Account.html">Account</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the accounts requested</p>
                       </div>
                     </section>
                   </div>
