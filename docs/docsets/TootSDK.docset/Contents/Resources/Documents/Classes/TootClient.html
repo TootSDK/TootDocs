@@ -349,6 +349,12 @@
                 <a href="../Structs/SearchParams/SearchType.html">– SearchType</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/Suggestion.html">Suggestion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Suggestion/Source.html">– Source</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Tag.html">Tag</a>
               </li>
               <li class="nav-group-task">
@@ -1139,25 +1145,6 @@ When signIn is initiated on supported platforms, the authorization web page will
                         </div>
                       </div>
                       <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>id</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>the ID of the Account in the instance database.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
                         <h4>Return Value</h4>
                         <p>the accounts requested, or an error if unable to retrieve</p>
                       </div>
@@ -1204,6 +1191,30 @@ When signIn is initiated on supported platforms, the authorization web page will
                               <td>
                                 <div>
                                   <p>the ID of the Account in the instance database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PagedInfo object for max/min/since</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of results to return. Defaults to 40 accounts. Max 80 accounts.</p>
                                 </div>
                               </td>
                             </tr>
@@ -2252,7 +2263,8 @@ Note that the call will be successful even if the domain was not previously bloc
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createPushSubscription</span><span class="p">(</span><span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/PushSubscriptionParams.html">PushSubscriptionParams</a></span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PushSubscription.html">PushSubscription</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">createPushSubscription</span><span class="p">(</span><span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/PushSubscriptionParams.html">PushSubscriptionParams</a></span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PushSubscription.html">PushSubscription</a></span></code></pre>
 
                         </div>
                       </div>
@@ -4164,6 +4176,108 @@ Note that the call will be successful even if the domain was not previously bloc
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7TootSDK0A6ClientC14getSuggestions5limitSayAA10SuggestionVGSiSg_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getSuggestions(limit:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC14getSuggestions5limitSayAA10SuggestionVGSiSg_tYaKF">getSuggestions(limit:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accounts that are promoted by staff, or that the user has had past positive interactions with, but is not yet following.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getSuggestions</span><span class="p">(</span><span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Suggestion.html">Suggestion</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of results to return. Defaults to 40, max 80.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of <code><a href="../Structs/Suggestion.html">Suggestion</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC16removeSuggestion2idySS_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/removeSuggestion(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC16removeSuggestion2idySS_tYaKF">removeSuggestion(id:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove an account from follow suggestions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeSuggestion</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the Account in the database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7TootSDK0A6ClientC6getTagyAA0E0VSSYaKF"></a>
                     <a name="//apple_ref/swift/Method/getTag(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7TootSDK0A6ClientC6getTagyAA0E0VSSYaKF">getTag(_:<wbr>)</a>
@@ -4336,6 +4450,37 @@ Note that the call will be successful even if the domain was not previously bloc
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getFollowedTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Tag.html">Tag</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pageInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PagedInfo object for max/min/since ids.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of results to return. Defaults to 100 tags. Max 200 tags.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                       <div>
                         <h4>Return Value</h4>
