@@ -73,13 +73,20 @@
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/HTTP/HTTPMethod.swift",
       "line": 9,
-      "symbol": "HTTPMethod.post",
+      "symbol": "HTTPMethod.patch",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/HTTP/HTTPMethod.swift",
       "line": 10,
+      "symbol": "HTTPMethod.post",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/HTTP/HTTPMethod.swift",
+      "line": 11,
       "symbol": "HTTPMethod.put",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -743,6 +750,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FeatureTagParams.swift",
+      "line": 15,
+      "symbol": "FeatureTagParams.init(name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FeaturedTag.swift",
       "line": 6,
       "symbol": "FeaturedTag",
@@ -1261,6 +1275,41 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/ProfileDirectoryParams.swift",
+      "line": 10,
+      "symbol": "ProfileDirectoryParams",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/ProfileDirectoryParams.swift",
+      "line": 17,
+      "symbol": "ProfileDirectoryParams.init(order:local:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/ProfileDirectoryParams.swift",
+      "line": 23,
+      "symbol": "ProfileDirectoryParams.Order",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/ProfileDirectoryParams.swift",
+      "line": 24,
+      "symbol": "ProfileDirectoryParams.Order.active",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/ProfileDirectoryParams.swift",
+      "line": 25,
+      "symbol": "ProfileDirectoryParams.Order.new",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/PushSubscription.swift",
       "line": 8,
       "symbol": "PushSubscription.init(endpoint:alerts:serverKey:)",
@@ -1489,6 +1538,13 @@
       "line": 27,
       "symbol": "Search.CodingKeys.hashtags",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/SearchAccountsParams.swift",
+      "line": 8,
+      "symbol": "SearchAccountsParams",
+      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
@@ -1919,6 +1975,55 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UpdateCredentialsParams.swift",
+      "line": 10,
+      "symbol": "UpdateCredentialsParams",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UpdateCredentialsParams.swift",
+      "line": 17,
+      "symbol": "UpdateCredentialsParams.avatarMimeType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UpdateCredentialsParams.swift",
+      "line": 20,
+      "symbol": "UpdateCredentialsParams.headerMimeType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UpdateCredentialsParams.swift",
+      "line": 32,
+      "symbol": "UpdateCredentialsParams.init(displayName:note:avatar:avatarMimeType:header:headerMimeType:locked:bot:discoverable:fieldsAttributes:source:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UpdateCredentialsParams.swift",
+      "line": 48,
+      "symbol": "UpdateCredentialsParams.Field.init(name:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UpdateCredentialsParams.swift",
+      "line": 59,
+      "symbol": "UpdateCredentialsParams.Source",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UpdateCredentialsParams.swift",
+      "line": 60,
+      "symbol": "UpdateCredentialsParams.Source.init(privacy:sensitive:language:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/UpdateMediaAttachmentParams.swift",
       "line": 6,
       "symbol": "UpdateMediaAttachmentParams",
@@ -2180,6 +2285,20 @@
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
       "line": 10,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 10,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 11,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
