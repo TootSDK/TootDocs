@@ -17,7 +17,7 @@
     <a title="Filter Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">TootSDK Docs</a> (63% documented)</p>
+        <p><a href="../index.html">TootSDK Docs</a> (66% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -196,6 +196,9 @@
                 <a href="../Structs/Emoji.html">Emoji</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/FamiliarFollowers.html">FamiliarFollowers</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/FeatureTagParams.html">FeatureTagParams</a>
               </li>
               <li class="nav-group-task">
@@ -209,6 +212,15 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Filter/Context.html">– Context</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Filter/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FilterKeyword.html">FilterKeyword</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FilterStatus.html">FilterStatus</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/FollowAccountParams.html">FollowAccountParams</a>
@@ -361,6 +373,9 @@
                 <a href="../Structs/SearchParams/SearchType.html">– SearchType</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/SetNoteForAccountParams.html">SetNoteForAccountParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Suggestion.html">Suggestion</a>
               </li>
               <li class="nav-group-task">
@@ -377,6 +392,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/TootContent.html">TootContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TootFeature.html">TootFeature</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/TootField.html">TootField</a>
@@ -479,9 +497,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s12IdentifiableP2id2IDQzvp"></a>
-                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s12IdentifiableP2id2IDQzvp">id</a>
+                    <a name="/s:7TootSDK6FilterV6ActionO"></a>
+                    <a name="//apple_ref/swift/Enum/Action" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK6FilterV6ActionO">Action</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -489,7 +507,36 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Filter/Action.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Action</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK6FilterV2idSSvp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK6FilterV2idSSvp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ID of the Filter in the database.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -505,9 +552,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK6FilterV6phraseSSvp"></a>
-                    <a name="//apple_ref/swift/Property/phrase" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK6FilterV6phraseSSvp">phrase</a>
+                    <a name="/s:7TootSDK6FilterV5titleSSvp"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK6FilterV5titleSSvp">title</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -515,14 +562,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A title given by the user to name the filter.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">phrase</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -542,7 +589,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The contexts in which the filter should be applied.</p>
 
                       </div>
                       <div class="declaration">
@@ -569,7 +616,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>When the filter should no longer be applied.</p>
 
                       </div>
                       <div class="declaration">
@@ -586,9 +633,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK6FilterV12irreversibleSbvp"></a>
-                    <a name="//apple_ref/swift/Property/irreversible" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK6FilterV12irreversibleSbvp">irreversible</a>
+                    <a name="/s:7TootSDK6FilterV12filterActionAC0E0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/filterAction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK6FilterV12filterActionAC0E0Ovp">filterAction</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -596,14 +643,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The action to be taken when a status matches this filter.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">irreversible</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">filterAction</span><span class="p">:</span> <span class="kt"><a href="../Structs/Filter/Action.html">Action</a></span></code></pre>
 
                         </div>
                       </div>
@@ -613,9 +660,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7TootSDK6FilterV9wholeWordSbvp"></a>
-                    <a name="//apple_ref/swift/Property/wholeWord" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK6FilterV9wholeWordSbvp">wholeWord</a>
+                    <a name="/s:7TootSDK6FilterV8keywordsSayAA0C7KeywordVGvp"></a>
+                    <a name="//apple_ref/swift/Property/keywords" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK6FilterV8keywordsSayAA0C7KeywordVGvp">keywords</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -623,14 +670,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The keywords grouped under this filter.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">wholeWord</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">keywords</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/FilterKeyword.html">FilterKeyword</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK6FilterV8statusesSayAA0C6StatusVGvp"></a>
+                    <a name="//apple_ref/swift/Property/statuses" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK6FilterV8statusesSayAA0C6StatusVGvp">statuses</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The statuses grouped under this filter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">statuses</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/FilterStatus.html">FilterStatus</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -643,7 +717,7 @@
         </section>
         <section id="footer">
           <p>Copyright (c) 2022, Konstantin Kostov and David Gary Wood</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

@@ -17,7 +17,7 @@
     <a title="TootClient Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">TootSDK Docs</a> (63% documented)</p>
+        <p><a href="../index.html">TootSDK Docs</a> (66% documented)</p>
         <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -196,6 +196,9 @@
                 <a href="../Structs/Emoji.html">Emoji</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/FamiliarFollowers.html">FamiliarFollowers</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/FeatureTagParams.html">FeatureTagParams</a>
               </li>
               <li class="nav-group-task">
@@ -209,6 +212,15 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Filter/Context.html">– Context</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Filter/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FilterKeyword.html">FilterKeyword</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FilterStatus.html">FilterStatus</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/FollowAccountParams.html">FollowAccountParams</a>
@@ -361,6 +373,9 @@
                 <a href="../Structs/SearchParams/SearchType.html">– SearchType</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/SetNoteForAccountParams.html">SetNoteForAccountParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Suggestion.html">Suggestion</a>
               </li>
               <li class="nav-group-task">
@@ -377,6 +392,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/TootContent.html">TootContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TootFeature.html">TootFeature</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/TootField.html">TootField</a>
@@ -1398,6 +1416,128 @@ When signIn is initiated on supported platforms, the authorization web page will
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7TootSDK0A6ClientC25getListsContainingAccount2idSayAA4ListVGSS_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getListsContainingAccount(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC25getListsContainingAccount2idSayAA4ListVGSS_tYaKF">getListsContainingAccount(id:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve lists in which the given account <code>id</code> is present</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getListsContainingAccount</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/List.html">List</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC16getConversations_5limitAA11PagedResultVySayAA12ConversationVGGAA0G4InfoVSg_SiSgtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getConversations(_:limit:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC16getConversations_5limitAA11PagedResultVySayAA12ConversationVGGAA0G4InfoVSg_SiSgtYaKF">getConversations(_:<wbr>limit:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return all conversations.</p>
+
+<p>Direct conversations with other participants. (Currently, just threads containing a post with &ldquo;direct&rdquo; visibility.)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getConversations</span><span class="p">(</span><span class="n">_</span> <span class="nv">pageInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/PagedInfo.html">PagedInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PagedResult.html">PagedResult</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Conversation.html">Conversation</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC18deleteConversation2idySS_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteConversation(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC18deleteConversation2idySS_tYaKF">deleteConversation(id:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a conversation from your list of conversations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteConversation</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC21setConversationAsRead2idAA0E0VSS_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/setConversationAsRead(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC21setConversationAsRead2idAA0E0VSS_tYaKF">setConversationAsRead(id:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a conversation from your list of conversations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setConversationAsRead</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Conversation.html">Conversation</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7TootSDK0A6ClientC20adminGetDomainBlocksSayAA0F5BlockVGyYaKF"></a>
                     <a name="//apple_ref/swift/Method/adminGetDomainBlocks()" class="dashAnchor"></a>
                     <a class="token" href="#/s:7TootSDK0A6ClientC20adminGetDomainBlocksSayAA0F5BlockVGyYaKF">adminGetDomainBlocks()</a>
@@ -1761,6 +1901,11 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Get tags featured by user.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Requires featured tags feature to be available.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1814,6 +1959,11 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>List all hashtags featured on your profile.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Requires featured tags feature to be available.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1848,6 +1998,11 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Shows up to 10 recently-used tags.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Requires featured tags feature to be available.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1882,6 +2037,11 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Promote a hashtag on your profile.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Requires featured tags feature to be available.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1932,6 +2092,11 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Stop promoting a hashtag on your profile.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Requires featured tags feature to be available.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1960,6 +2125,125 @@ Note that the call will be successful even if the domain was not previously bloc
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC10getFiltersSayAA6FilterVGyYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getFilters()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC10getFiltersSayAA6FilterVGyYaKF">getFilters()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Obtain a list of all filter groups for the current user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getFilters</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Filter.html">Filter</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The filters or an error if unable to retrieve.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC9getFilter2idAA0E0VSS_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getFilter(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC9getFilter2idAA0E0VSS_tYaKF">getFilter(id:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Obtain a single filter group owned by the current user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getFilter</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Filter.html">Filter</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the Filter in the database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the Filter, if successful, throws an error if not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC12deleteFilter2idySS_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteFilter(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC12deleteFilter2idySS_tYaKF">deleteFilter(id:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete a filter
+/// - Parameters:
+    - id: The ID of the Filter in the database.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteFilter</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -2727,6 +3011,102 @@ Note that the call will be successful even if the domain was not previously bloc
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7TootSDK0A6ClientC7getPoll2idAA0E0VSS_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getPoll(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC7getPoll2idAA0E0VSS_tYaKF">getPoll(id:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Obtain a poll with the specified <code>id</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getPoll</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC8votePoll2id7choicesAA0E0VSS_10Foundation8IndexSetVtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/votePoll(id:choices:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC8votePoll2id7choicesAA0E0VSS_10Foundation8IndexSetVtYaKF">votePoll(id:<wbr>choices:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vote on a poll.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">votePoll</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">,</span> <span class="nv">choices</span><span class="p">:</span> <span class="kt">IndexSet</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the Poll.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>choices</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set of indices representing votes for each option (starting from 0).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Poll that was voted on.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7TootSDK0A6ClientC11publishPostyAA0E0CAA0E6ParamsVYaKF"></a>
                     <a name="//apple_ref/swift/Method/publishPost(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7TootSDK0A6ClientC11publishPostyAA0E0CAA0E6ParamsVYaKF">publishPost(_:<wbr>)</a>
@@ -2911,7 +3291,9 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>View statuses above and below this post in the thread.</p>
+
+<p>Public for public posts limited to 40 ancestors and 60 descendants with a maximum depth of 20. User token + read:statuses for up to 4,096 ancestors, 4,096 descendants, unlimited depth, and private posts.</p>
 
                       </div>
                       <div class="declaration">
@@ -3054,7 +3436,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Reshare a post on your own profile.</p>
 
                       </div>
                       <div class="declaration">
@@ -3084,7 +3466,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Undo a reshare of a post.</p>
 
                       </div>
                       <div class="declaration">
@@ -3114,7 +3496,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Privately bookmark a post.</p>
 
                       </div>
                       <div class="declaration">
@@ -3144,7 +3526,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove a post from your private bookmarks.</p>
 
                       </div>
                       <div class="declaration">
@@ -3174,7 +3556,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Do not receive notifications for the thread that this post is part of. Must be a thread in which you are a participant.</p>
 
                       </div>
                       <div class="declaration">
@@ -3204,7 +3586,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Start receiving notifications again for the thread that this post is part of.</p>
 
                       </div>
                       <div class="declaration">
@@ -3234,7 +3616,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Feature one of your own public posts at the top of your profile.</p>
 
                       </div>
                       <div class="declaration">
@@ -3264,7 +3646,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Unfeature a post from the top of your profile.</p>
 
                       </div>
                       <div class="declaration">
@@ -3294,7 +3676,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>View who boosted a given post.</p>
 
                       </div>
                       <div class="declaration">
@@ -3324,7 +3706,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>View who favourited a given post.</p>
 
                       </div>
                       <div class="declaration">
@@ -3354,7 +3736,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Get all known versions of a post, including the initial and current states.</p>
 
                       </div>
                       <div class="declaration">
@@ -3384,7 +3766,7 @@ Note that the call will be successful even if the domain was not previously bloc
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Obtain the source properties for a status so that it can be edited.</p>
+                        <p>Obtain the source properties for a post so that it can be edited.</p>
 
                       </div>
                       <div class="declaration">
@@ -3394,102 +3776,6 @@ Note that the call will be successful even if the domain was not previously bloc
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getPostSource</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/PostSource.html">PostSource</a></span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC7getPoll2idAA0E0VSS_tYaKF"></a>
-                    <a name="//apple_ref/swift/Method/getPoll(id:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC7getPoll2idAA0E0VSS_tYaKF">getPoll(id:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Obtain a poll with the specified <code>id</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getPoll</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC8votePoll2id7choicesAA0E0VSS_10Foundation8IndexSetVtYaKF"></a>
-                    <a name="//apple_ref/swift/Method/votePoll(id:choices:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC8votePoll2id7choicesAA0E0VSS_10Foundation8IndexSetVtYaKF">votePoll(id:<wbr>choices:<wbr>)</a>
-                    </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Vote on a poll.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">func</span> <span class="nf">votePoll</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">,</span> <span class="nv">choices</span><span class="p">:</span> <span class="kt">IndexSet</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Poll.html">Poll</a></span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>id</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The ID of the Poll.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>choices</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Set of indices representing votes for each option (starting from 0).</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The Poll that was voted on.</p>
                       </div>
                     </section>
                   </div>
@@ -4340,6 +4626,59 @@ Note that the call will be successful even if the domain was not previously bloc
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7TootSDK0A6ClientC17setNoteForAccount2by6paramsAA12RelationshipVSS_AA03SetefG6ParamsVSgtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/setNoteForAccount(by:params:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC17setNoteForAccount2by6paramsAA12RelationshipVSS_AA03SetefG6ParamsVSgtYaKF">setNoteForAccount(by:<wbr>params:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a private note on a user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNoteForAccount</span><span class="p">(</span><span class="n">by</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/SetNoteForAccountParams.html">SetNoteForAccountParams</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Relationship.html">Relationship</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the ID of the Account in the instance database.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the relationship to the account requested (including the note), or an error if unable to retrieve</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7TootSDK0A6ClientC16getRelationships2bySayAA12RelationshipVGSaySSG_tYaKF"></a>
                     <a name="//apple_ref/swift/Method/getRelationships(by:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7TootSDK0A6ClientC16getRelationships2bySayAA12RelationshipVGSaySSG_tYaKF">getRelationships(by:<wbr>)</a>
@@ -4386,6 +4725,59 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div>
                         <h4>Return Value</h4>
                         <p>the relationship to the account requested, or an error if unable to retrieve</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC20getFamiliarFollowers2bySayAA0eF0VGSaySSG_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/getFamiliarFollowers(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC20getFamiliarFollowers2bySayAA0eF0VGSaySSG_tYaKF">getFamiliarFollowers(by:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Obtain a list of all accounts that follow a given account, filtered for accounts you follow.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getFamiliarFollowers</span><span class="p">(</span><span class="n">by</span> <span class="nv">ids</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/FamiliarFollowers.html">FamiliarFollowers</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ids</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Find familiar followers for the provided account IDs.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>array of FamiliarFollowers</p>
                       </div>
                     </section>
                   </div>
@@ -4994,6 +5386,11 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Follow a tag.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Requires hashtag following feature to be available.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -5044,6 +5441,11 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Unfollow a tag.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Requires hashtag following feature to be available.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -5094,6 +5496,11 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Get all tags which the current account is following.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Requires hashtag following feature to be available.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -5138,33 +5545,6 @@ Note that the call will be successful even if the domain was not previously bloc
                       <div>
                         <h4>Return Value</h4>
                         <p>the tags requested</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7TootSDK0A6ClientC13canFollowTagsSbvp"></a>
-                    <a name="//apple_ref/swift/Property/canFollowTags" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7TootSDK0A6ClientC13canFollowTagsSbvp">canFollowTags</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Tells whether current flavour supports following or unfollowing tags.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">canFollowTags</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -5782,13 +6162,63 @@ Exchange the callback authorization code for an accessToken</p>
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A6ClientC15supportsFeatureySbAA0aE0VF"></a>
+                    <a name="//apple_ref/swift/Method/supportsFeature(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A6ClientC15supportsFeatureySbAA0aE0VF">supportsFeature(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if this instance of <code>TootClient</code> can perform methods that are related to given <code>feature</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">supportsFeature</span><span class="p">(</span><span class="n">_</span> <span class="nv">feature</span><span class="p">:</span> <span class="kt"><a href="../Structs/TootFeature.html">TootFeature</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>feature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The feature to check if is supported.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the feature is supported.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
           <p>Copyright (c) 2022, Konstantin Kostov and David Gary Wood</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

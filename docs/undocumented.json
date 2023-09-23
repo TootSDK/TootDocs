@@ -653,28 +653,7 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Context.swift",
-      "line": 6,
-      "symbol": "Context",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Context.swift",
-      "line": 7,
-      "symbol": "Context.ancestors",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Context.swift",
-      "line": 8,
-      "symbol": "Context.descendants",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Context.swift",
-      "line": 10,
+      "line": 14,
       "symbol": "Context.init(ancestors:descendants:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -786,72 +765,30 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 8,
-      "symbol": "Filter.Context.home",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "line": 20,
+      "symbol": "Filter.Action",
+      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 9,
-      "symbol": "Filter.Context.notifications",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 10,
-      "symbol": "Filter.Context.public",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 11,
-      "symbol": "Filter.Context.thread",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 15,
-      "symbol": "Filter.phrase",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 16,
-      "symbol": "Filter.context",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 17,
-      "symbol": "Filter.expiresAt",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 18,
-      "symbol": "Filter.irreversible",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 19,
-      "symbol": "Filter.wholeWord",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Filter.swift",
-      "line": 22,
+      "line": 43,
       "symbol": "Filter.Context",
       "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FilterKeyword.swift",
+      "line": 6,
+      "symbol": "FilterKeyword",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/FilterStatus.swift",
+      "line": 6,
+      "symbol": "FilterStatus",
+      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
@@ -1576,6 +1513,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/SetNoteForAccountParams.swift",
+      "line": 10,
+      "symbol": "SetNoteForAccountParams",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/SetNoteForAccountParams.swift",
+      "line": 11,
+      "symbol": "SetNoteForAccountParams.comment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/Models/Suggestion.swift",
       "line": 12,
       "symbol": "Suggestion.init(source:account:)",
@@ -2074,99 +2025,15 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 48,
-      "symbol": "TootClient.getContext(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 74,
+      "line": 77,
       "symbol": "TootClient.favouritePost(id:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 82,
+      "line": 85,
       "symbol": "TootClient.unfavouritePost(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 94,
-      "symbol": "TootClient.boostPost(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 102,
-      "symbol": "TootClient.unboostPost(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 114,
-      "symbol": "TootClient.bookmarkPost(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 122,
-      "symbol": "TootClient.unbookmarkPost(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 134,
-      "symbol": "TootClient.mutePost(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 142,
-      "symbol": "TootClient.unmutePost(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 153,
-      "symbol": "TootClient.pinPost(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 161,
-      "symbol": "TootClient.unpinPost(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 172,
-      "symbol": "TootClient.getAccountsBoosted(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 182,
-      "symbol": "TootClient.getAccountsFavourited(id:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient+Post.swift",
-      "line": 196,
-      "symbol": "TootClient.getHistory(id:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -2298,6 +2165,27 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 10,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 10,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
+      "line": 10,
+      "symbol": "TootClient",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
       "line": 11,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
@@ -2305,7 +2193,7 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 57,
+      "line": 60,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
@@ -2319,91 +2207,84 @@
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 72,
+      "line": 75,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 92,
+      "line": 95,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 112,
+      "line": 117,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 132,
+      "line": 139,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 151,
+      "line": 160,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 170,
+      "line": 181,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 194,
+      "line": 207,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 208,
+      "line": 222,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 224,
+      "line": 247,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 243,
+      "line": 257,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 253,
-      "symbol": "TootClient",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 316,
+      "line": 320,
       "symbol": "TootClient.collectRegistrationToken(clientId:clientSecret:callbackURI:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/TootDocs/TootDocs/TootSDK/Sources/TootSDK/TootClient/TootClient.swift",
-      "line": 334,
+      "line": 338,
       "symbol": "TootClient",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"

@@ -17,7 +17,7 @@
     <a title="Structures  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">TootSDK Docs</a> (63% documented)</p>
+        <p><a href="index.html">TootSDK Docs</a> (66% documented)</p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -196,6 +196,9 @@
                 <a href="Structs/Emoji.html">Emoji</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/FamiliarFollowers.html">FamiliarFollowers</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/FeatureTagParams.html">FeatureTagParams</a>
               </li>
               <li class="nav-group-task">
@@ -209,6 +212,15 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Filter/Context.html">– Context</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Filter/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/FilterKeyword.html">FilterKeyword</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/FilterStatus.html">FilterStatus</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/FollowAccountParams.html">FollowAccountParams</a>
@@ -361,6 +373,9 @@
                 <a href="Structs/SearchParams/SearchType.html">– SearchType</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/SetNoteForAccountParams.html">SetNoteForAccountParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/Suggestion.html">Suggestion</a>
               </li>
               <li class="nav-group-task">
@@ -377,6 +392,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/TootContent.html">TootContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TootFeature.html">TootFeature</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/TootField.html">TootField</a>
@@ -817,7 +835,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Represents the tree around a given post. Used for reconstructing threads of posts.</p>
 
                         <a href="Structs/Context.html" class="slightly-smaller">See more</a>
                       </div>
@@ -975,6 +993,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7TootSDK17FamiliarFollowersV"></a>
+                    <a name="//apple_ref/swift/Struct/FamiliarFollowers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK17FamiliarFollowersV">FamiliarFollowers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a subset of your follows who also follow some other user.</p>
+
+                        <a href="Structs/FamiliarFollowers.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FamiliarFollowers</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7TootSDK16FeatureTagParamsV"></a>
                     <a name="//apple_ref/swift/Struct/FeatureTagParams" class="dashAnchor"></a>
                     <a class="token" href="#/s:7TootSDK16FeatureTagParamsV">FeatureTagParams</a>
@@ -1050,6 +1096,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Filter</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK13FilterKeywordV"></a>
+                    <a name="//apple_ref/swift/Struct/FilterKeyword" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK13FilterKeywordV">FilterKeyword</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/FilterKeyword.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FilterKeyword</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK12FilterStatusV"></a>
+                    <a name="//apple_ref/swift/Struct/FilterStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK12FilterStatusV">FilterStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/FilterStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FilterStatus</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Identifiable</span></code></pre>
 
                         </div>
                       </div>
@@ -1237,7 +1339,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Represents a file or media attachment that can be added to a status.</p>
+                        <p>Represents a file or media attachment that can be added to a post.</p>
 
                         <a href="Structs/MediaAttachment.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1628,7 +1730,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Represents a status&rsquo;s source as plain text.</p>
+                        <p>Represents a post&rsquo;s source as plain text.</p>
 
                         <a href="Structs/PostSource.html" class="slightly-smaller">See more</a>
                       </div>
@@ -2096,6 +2198,34 @@ such as following / blocking / muting / etc.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7TootSDK23SetNoteForAccountParamsV"></a>
+                    <a name="//apple_ref/swift/Struct/SetNoteForAccountParams" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK23SetNoteForAccountParamsV">SetNoteForAccountParams</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/SetNoteForAccountParams.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SetNoteForAccountParams</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7TootSDK10SuggestionV"></a>
                     <a name="//apple_ref/swift/Struct/Suggestion" class="dashAnchor"></a>
                     <a class="token" href="#/s:7TootSDK10SuggestionV">Suggestion</a>
@@ -2315,6 +2445,34 @@ such as following / blocking / muting / etc.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TootContent</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7TootSDK0A7FeatureV"></a>
+                    <a name="//apple_ref/swift/Struct/TootFeature" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7TootSDK0A7FeatureV">TootFeature</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a feature that is not supported by all flavours.</p>
+
+                        <a href="Structs/TootFeature.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TootFeature</span></code></pre>
 
                         </div>
                       </div>
@@ -2551,7 +2709,7 @@ such as following / blocking / muting / etc.</p>
         </section>
         <section id="footer">
           <p>Copyright (c) 2022, Konstantin Kostov and David Gary Wood</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
